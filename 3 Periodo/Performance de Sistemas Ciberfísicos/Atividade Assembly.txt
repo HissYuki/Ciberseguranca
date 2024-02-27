@@ -1,0 +1,65 @@
+Estudantes:	Gustavo Toshio Kawano
+		Marco Aurelio Nissikawa Hisatomi
+
+Exercício 1
+
+inicio:
+mov eax, 3
+mov ebx, 10
+mov ecx, 9
+mov edx, 8
+
+cmp eax, ebx
+jz l1
+cmp eax, ecx
+jz l2
+cmp eax, edx
+jz l3
+jnz l4
+
+l1:
+mov edi, 1
+jmp fim
+
+l2:
+mov edi, 2
+jmp fim
+
+l3:
+mov edi, 3
+jmp fim
+
+l4:
+mov edi, 4
+
+fim:
+
+
+
+Exercício 2
+
+inicio:
+mov eax, 2001
+mov ebx, 2
+mov ecx, 28
+
+mov edx, 2
+mov esi, 26
+mov edi, 2024
+
+sub edi, eax
+cmp ebx, edx
+jg subtracao
+jz dia
+jmp fim
+
+dia:
+cmp ecx, esi
+jl fim
+
+subtracao:
+dec edi
+
+fim:
+
+
